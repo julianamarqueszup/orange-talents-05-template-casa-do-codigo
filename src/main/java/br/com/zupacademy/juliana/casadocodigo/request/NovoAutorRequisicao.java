@@ -1,6 +1,7 @@
 package br.com.zupacademy.juliana.casadocodigo.request;
 
 import br.com.zupacademy.juliana.casadocodigo.model.Autor;
+import br.com.zupacademy.juliana.casadocodigo.validation.annotation.Unique;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -12,6 +13,7 @@ public class NovoAutorRequisicao {
 
     @NotBlank
     @Email
+    @Unique(modelClass = Autor.class, field = "email")
     private String email;
 
     @NotBlank

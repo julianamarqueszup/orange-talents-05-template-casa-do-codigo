@@ -1,7 +1,5 @@
-package br.com.zupacademy.juliana.casadocodigo.validation.annotations;
-
-
-import br.com.zupacademy.juliana.casadocodigo.constraints.UniqueValuesConstraint;
+package br.com.zupacademy.juliana.casadocodigo.validation.annotation;
+import br.com.zupacademy.juliana.casadocodigo.validation.constraints.UniqueValuesConstraint;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

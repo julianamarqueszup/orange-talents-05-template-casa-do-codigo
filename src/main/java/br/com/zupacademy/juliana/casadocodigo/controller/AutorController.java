@@ -4,8 +4,10 @@ import br.com.zupacademy.juliana.casadocodigo.dto.AutorDTO;
 import br.com.zupacademy.juliana.casadocodigo.exception.NotFoundException;
 import br.com.zupacademy.juliana.casadocodigo.repository.AutorRepository;
 import br.com.zupacademy.juliana.casadocodigo.request.NovoAutorRequisicao;
+import br.com.zupacademy.juliana.casadocodigo.validation.validator.ValidaEmailAutorUnico;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -18,6 +20,14 @@ import java.net.URI;
 public class AutorController {
     @Autowired
     private AutorRepository autorRepository;
+
+    @Autowired
+    private ValidaEmailAutorUnico validaEmailAutorUnico;
+
+    @InitBinder
+    public void initBinder (WebDataBinder binder) {
+        binder.addValidators(validaEmailAutorUnico);
+    }
 
     @PostMapping
     @Transactional

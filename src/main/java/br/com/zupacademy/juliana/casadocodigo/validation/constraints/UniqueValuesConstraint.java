@@ -1,9 +1,9 @@
-package br.com.zupacademy.juliana.casadocodigo.constraints;
+package br.com.zupacademy.juliana.casadocodigo.validation.constraints;
 
 
-import br.com.zupacademy.juliana.casadocodigo.validation.annotations.UniqueValues;
+import br.com.zupacademy.juliana.casadocodigo.util.ValidationUtils;
+import br.com.zupacademy.juliana.casadocodigo.validation.annotation.UniqueValues;
 import org.springframework.beans.BeanWrapperImpl;
-import org.springframework.validation.ValidationUtils;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -1,4 +1,4 @@
-package br.com.zupacademy.juliana.casadocodigo.validation.annotations;
+package br.com.zupacademy.juliana.casadocodigo.validation.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

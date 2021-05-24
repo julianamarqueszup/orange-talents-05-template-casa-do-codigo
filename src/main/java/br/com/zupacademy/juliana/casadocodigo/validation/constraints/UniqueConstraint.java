@@ -1,6 +1,6 @@
-package br.com.zupacademy.juliana.casadocodigo.constraints;
+package br.com.zupacademy.juliana.casadocodigo.validation.constraints;
 
-import br.com.zupacademy.juliana.casadocodigo.validation.annotations.Unique;
+import br.com.zupacademy.juliana.casadocodigo.validation.annotation.Unique;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
