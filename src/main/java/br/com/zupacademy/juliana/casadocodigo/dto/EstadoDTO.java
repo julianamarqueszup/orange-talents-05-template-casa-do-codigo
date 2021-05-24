@@ -8,7 +8,7 @@ public class EstadoDTO {
 
     public EstadoDTO(Estado estado) {
         this.id = estado.getId();
-        this.nome = estado.getName();
+        this.nome = estado.getNome();
     }
 
     public Long getId() {
