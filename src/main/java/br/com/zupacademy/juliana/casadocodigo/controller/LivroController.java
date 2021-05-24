@@ -1,6 +1,7 @@
 package br.com.zupacademy.juliana.casadocodigo.controller;
 
 import br.com.zupacademy.juliana.casadocodigo.dto.LivroDTO;
+import br.com.zupacademy.juliana.casadocodigo.dto.LivroDetalhesDTO;
 import br.com.zupacademy.juliana.casadocodigo.exception.NotFoundException;
 import br.com.zupacademy.juliana.casadocodigo.repository.AutorRepository;
 import br.com.zupacademy.juliana.casadocodigo.repository.CategoriaRepository;
